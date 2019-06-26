@@ -1,0 +1,23 @@
+{
+    "name": "kp/php-shopping-cart",
+    "description": "PHP alapu kosar, webshop rendszerekhez.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kádár Péter",
+            "email": "kadar.peter@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "symfony/var-dumper": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "kp\\cart\\": "src/"
+        }
+    }
+}
