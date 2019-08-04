@@ -59,7 +59,7 @@ class CartItem implements CartItemInterface
     
     public function setQuantity($quantity)
     {
-        $this->quantity = (int) $quantity <= 0 ?: 1;
+        $this->quantity = (int) $quantity <= 0 ? 1 : (int) $quantity;
         return $this;
     }
 

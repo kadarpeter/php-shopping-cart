@@ -10,10 +10,9 @@ $cart = new BaseCart();
 $item = new CartItem(1, 'Első termék', 100, 1, ['taxRate' => 27]);
 $item->setOption('isNew', true);
 $item->setQuantity(2);
-//dump($item->getQuantity());
 
 $cart->addItem($item);
-dump($cart);
+$cart->updateItemQty($item, 4);
 
 $item = new CartItem(1, 'Első termék', 100, 1, ['taxRate' => 27]);
 $item->setQuantity(-1);
